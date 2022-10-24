@@ -53,7 +53,7 @@ Date of finished: x.10.2022 <br/>
    
    8. Успешно протестирован VPN.
    
-   ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7fd050f7-9f48-49f1-9cf4-92e2cefd4ca3/Untitled.png)
+   ![image](https://user-images.githubusercontent.com/17079352/197523825-b0858a40-441e-4763-bf03-b9b67a9f3f86.png)
    
    9. Создан конфигурационный файл для маршрутизации трафика с vpn сервера в Интернет. А тажке этот файл добавлен в автозагрузку, создав при этом сервис. 
    
