@@ -33,26 +33,28 @@ Date of finished: xx.11.2022 <br/>
 
 ![image](https://user-images.githubusercontent.com/17079352/204522663-fe6224a1-6f07-46ba-a010-93202107ee66.png)
 
-### Написание сценария для настройки CHR1, CHR2 ###
+   4. Следующее задание разделено на 2 части: получить имена роутеров из файла netbox_devices.csv и изменить имена роутеров. Потом всё это соединено в один playbook. Имена роутеров действительно изменились.
 
-   5. Был написан сценарий для настройки сетевых устройств
+![image](https://user-images.githubusercontent.com/17079352/204849795-c4862b2c-9768-4c58-8c9f-908c4694a957.png)
+![image](https://user-images.githubusercontent.com/17079352/204849998-ca6c28ac-4976-4c35-b86b-10a9083779c0.png)
 
-[<img src="https://user-images.githubusercontent.com/58363643/201353339-d6f4bf3b-1201-46c9-94ce-04db7ea3d393.png" width="400"/>](https://user-images.githubusercontent.com/58363643/201353339-d6f4bf3b-1201-46c9-94ce-04db7ea3d393.png)
+   5. Теперь задача обратная предыдущей - с помощью ansible playbook нужно передать информацию о роутере в NetBox.
 
-   6. Была выполнена проверка изменения настроек сетевого устройства
+![image](https://user-images.githubusercontent.com/17079352/204851258-d1d10cd7-10c5-41c1-b5db-a7850f8ca5cd.png)
+
+   6. В NetBox действительно был создан новый роутер
    
-[<img src="https://user-images.githubusercontent.com/58363643/201350970-1d9b9fda-f21b-4029-a275-1e0f35d53c79.png" width="200"/>](https://user-images.githubusercontent.com/58363643/201350970-1d9b9fda-f21b-4029-a275-1e0f35d53c79.png)
+![image](https://user-images.githubusercontent.com/17079352/204851472-02ad256b-0888-472f-a858-9fc3d5f797ac.png)
 
-### Написание сценария для создания устройтва в NetBox ###
-   7. Был создан сценарий для получения серийного номера сетевого устройства и создания устройства в NetBox
+   7. Был создан playbook, цель которого - достать информацию о серийном номере из микротика и отправить эту информацию в NetBox
 
-[<img src="https://user-images.githubusercontent.com/58363643/201636103-ba637bf6-4a4c-4b4c-8fa6-d50a3099f356.png" width="400"/>](https://user-images.githubusercontent.com/58363643/201636103-ba637bf6-4a4c-4b4c-8fa6-d50a3099f356.png)
+![image](https://user-images.githubusercontent.com/17079352/204865956-866d2cd4-4e10-45d4-8cfa-fb2a23c0957c.png)
 
-   8. Была выполнена проверка работы сценария
+   8. Playbook отработал без ошибок и создал новый device в NetBox с серийным номером
    
-[<img src="https://user-images.githubusercontent.com/58363643/201635874-79a00d34-f62b-411b-979e-0979208d61b0.png" width="400"/>](https://user-images.githubusercontent.com/58363643/201635874-79a00d34-f62b-411b-979e-0979208d61b0.png)
+![image](https://user-images.githubusercontent.com/17079352/204866374-9a5df20e-085e-420b-bc13-e162ddf6e138.png)
+![image](https://user-images.githubusercontent.com/17079352/204866265-d36ffe84-66f4-4112-81c4-ae66b1d2f550.png)
 
-[<img src="https://user-images.githubusercontent.com/58363643/201635820-ea4fc208-9ca6-4c1a-8d38-814b5bcd8cb7.png" width="800"/>](https://user-images.githubusercontent.com/58363643/201635820-ea4fc208-9ca6-4c1a-8d38-814b5bcd8cb7.png)
 
 ## Выводы:
    Таким образом, в процессе выполнения лабораторной работы ознакомились с инструментом NetBox, были созданы сценарии Ansible для работы с NetBox. Также была выполнена проверка локальной связности между роутерами и NetBox.
