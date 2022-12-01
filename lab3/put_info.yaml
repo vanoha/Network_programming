@@ -14,6 +14,7 @@
         echo {{ inventory_hostname }}: | tr -d '\n' >> mikrotik_data.yaml
         echo ' ' | tr -d '\n' >> mikrotik_data.yaml
         echo -n '{{ system_resource_print }}'| cut -c 39-48 >> mikrotik_data.yaml
+        
 - name: put information to netbox
   hosts: servers
   connection: local
