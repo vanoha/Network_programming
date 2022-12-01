@@ -1,0 +1,41 @@
+---
+- name: take info from netbox file
+  hosts: localhost
+  tasks:
+    - name: read info from csv file
+      community.general.read_csv:
+        path: /home/itmo/netbox_devices.csv
+        key: 'ID'
+      register: routers
+      delegate_to: localhost
+
+    - name: checking
+      debug:
+        msg: 'Router {{ routers.dict[ item ].Name }}'
+      loop:
+        - "1"
+        - "2"
+
+    - name: set_var
+      copy:
+        dest: '/home/itmo/CHR{{ item }}.yaml'
+        content: 'name: {{ routers.dict[ item ].Name }}'
+      loop:
+        - "1"
+        - "2"
+- name: router change name
+  hosts: routers
+  gather_facts: false
+  vars_files:
+    - /home/itmo/CHR1.yaml
+    - /home/itmo/CHR2.yaml
+  tasks:
+    - name: commands
+      community.routeros.command:
+        commands:
+          - /system identity set name={{ name }}
+      register: system_resource_print
+    - name: print output
+      ansible.builtin.debug:
+        var: system_resource_print.stdout_lines
+...
