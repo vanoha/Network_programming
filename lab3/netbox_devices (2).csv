@@ -1,0 +1,6 @@
+Name,Status,Tenant,Site,Location,Rack,Role,Manufacturer,Type,IP Address,Serial number,ID,Tenant Group,Platform,Asset tag,Region,Site Group,Position (U),Rack face,Airflow,IPv4 Address,IPv6 Address,Cluster,Virtual chassis,VC Position,VC Priority,Comments,Contacts,Tags,Created,Last updated
+Yandex Server (Ubuntu),Active,,localnet,,,server,yandex,Ubuntu 20,,,3,,,,,,,,,,,,,,,,,,2022-11-29 11:13,2022-11-29 11:13
+CHR,Active,,localnet,,,router,mikrotik,os,,,1,,,,,,,,,,,,,,,,,,2022-11-29 11:08,2022-11-29 12:04
+CHR_2,Active,,localnet,,,router,mikrotik,os,,,2,,,,,,,,,,,,,,,,,,2022-11-29 11:08,2022-11-29 12:05
+test device,Active,,localnet,,,router,mikrotik,os,,,4,,,,,,,,,,,,,,,,,,2022-11-30 16:06,2022-11-30 16:06
+server1,Active,,localnet,,,router,mikrotik,os,,server1,5,,,,,,,,,,,,,,,,,,2022-11-30 17:17,2022-11-30 17:17
