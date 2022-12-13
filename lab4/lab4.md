@@ -65,7 +65,7 @@ Date of finished: 13.12.2022 <br/>
    
    - Обновлено выражение apply. Оно позволяет применять myTunnel_exact, если заголовок myTunell валидный.
    
-   ![image](https://user-images.githubusercontent.com/17079352/207240691-9c37fbf3-c351-4f38-9ad9-492a7b4941a5.png)
+   ![image](https://user-images.githubusercontent.com/17079352/207241529-027e5c0c-85e7-4c5f-ac0b-9878483be334.png)
    
    - Был обновлен MyDeparser
    
