@@ -89,7 +89,8 @@ Date of finished: 13.12.2022 <br/>
 ## Выводы
 Было детально разобрано стандартное перенаправление пакетов, а также туннелирование, и данные механизмы реализованы посредством языка P4.
 
-[<img src="https://user-images.githubusercontent.com/58363643/204451708-c03bace6-1f80-453e-8af8-09c6687de169.png" width="400"/>](https://user-images.githubusercontent.com/58363643/204451708-c03bace6-1f80-453e-8af8-09c6687de169.png)
+
+![image](https://user-images.githubusercontent.com/17079352/207258516-dfa6e91d-c9ee-40b2-809a-542c115e14da.png)
 
    
 
